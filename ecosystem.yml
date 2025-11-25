@@ -1,5 +1,5 @@
 apps:
-  - name: 'spanish-311-tracker'
+  - name: 'open-seats-tracker'
     script: 'src/index.ts'
     interpreter: 'bun'
     time: true

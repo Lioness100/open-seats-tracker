@@ -1,7 +1,7 @@
 {
-	"name": "spanish-311-tracker",
+	"name": "open-seats-tracker",
 	"version": "1.0.0",
-	"description": "Track open seats for Spanish 311 at UMass",
+	"description": "Track open seats for your next semester courses at UMass",
 	"module": "src/index.ts",
 	"type": "module",
 	"private": true,

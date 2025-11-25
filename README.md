@@ -1,12 +1,14 @@
-# Spanish 311 Open Seats Tracker
+# Open Seats Tracker
 
-A proof-of-concept application that tracks open seats for Spanish 311 at UMass
-using the Proxy Schedule Builder API.
+Track open seats for your next semester courses at UMass.
+
+Monitors currently enrolled sections and sections in your shopping cart using the Proxy Schedule Builder API.
 
 ## Configuration
 
 - `PROXY_URL`: URL of the [schedule builder proxy](https://github.com/Lioness100/schedule-builder) (required, default: http://localhost:3007)
-- `CHECK_INTERVAL`: Time between checks in milliseconds (default: 60000 = 1 minute)
+- `UMASS_TERM`: The semester term to track (required, default: Spring 2026)
+- `CHECK_INTERVAL`: Time between checks in milliseconds (required, default: 60000 = 1 minute)
 - `API_KEY`: Optional API key for authentication
 - `WEBHOOK_URL`: Optional Discord webhook URL for notifications
 
