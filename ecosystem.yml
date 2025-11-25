@@ -1,0 +1,5 @@
+apps:
+  - name: 'spanish-311-tracker'
+    script: 'src/index.ts'
+    interpreter: 'bun'
+    time: true
