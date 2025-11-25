@@ -14,21 +14,19 @@ Monitors currently enrolled sections and sections in your shopping cart using th
 
 ## Setup
 
-1. Make sure the schedule-builder proxy is running (see parent directory)
-
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    bun install
    ```
 
-3. Create a `.env` file:
+2. Create a `.env` file:
    ```bash
    cp .env.example .env
    ```
    
-4. Configure the proxy URL in `.env` (default: `http://localhost:3007`)
+3. Configure the proxy URL in `.env` (default: `http://localhost:3007`)
 
-5. Run the tracker:
+4. Run the tracker:
    ```bash
    bun start
    ```
