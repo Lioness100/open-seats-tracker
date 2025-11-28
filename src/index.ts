@@ -56,7 +56,10 @@ const check = async () => {
 	const timestamp = new Date().toLocaleString();
 
 	if (lastSections === null) {
-		const changeLog = `📚 Tracking ${sections.length} section(s):\n${sections.map((s) => `**${s.subjectId} ${s.course} ${s.sectionNumber}**: ${s.openSeats} open seats`).join('\n')}`;
+		const changeLog = sections
+			.map((s) => `${s.subjectId} ${s.course} ${s.sectionNumber}: ${s.openSeats} open seats`)
+			.join('\n');
+
 		console.log(changeLog);
 		await sendWebhook(changeLog);
 	} else {
@@ -76,7 +79,7 @@ const check = async () => {
 		}
 
 		if (hasChanges) {
-			await sendWebhook(`🔔 Seat changes:\n${changes.map((c) => `**${c}**`).join('\n')}`);
+			await sendWebhook(changes.join('\n'));
 		} else {
 			console.log(`[${timestamp}] No changes`);
 		}
